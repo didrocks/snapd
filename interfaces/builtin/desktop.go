@@ -64,14 +64,18 @@ owner @{HOME}/.config/gtk-3.0/settings.ini r,
 # Note: this leaks directory names that wouldn't otherwise be known to the snap
 owner @{HOME}/.config/gtk-3.0/bookmarks r,
 
-/usr/share/icons/                          r,
-/usr/share/icons/**                        r,
-/usr/share/icons/*/index.theme             rk,
-/usr/share/pixmaps/                        r,
-/usr/share/pixmaps/**                      r,
-/usr/share/unity/icons/**                  r,
-/usr/share/thumbnailer/icons/**            r,
-/usr/share/themes/**                       r,
+/usr/share/icons/                              r,
+/usr/share/icons/**                            r,
+/usr/share/icons/*/index.theme                 rk,
+/snap/communitheme/*/share/icons/              r,
+/snap/communitheme/*/share/icons/**            r,
+/snap/communitheme/*/share/icons/*/index.theme rk,
+/usr/share/pixmaps/                            r,
+/usr/share/pixmaps/**                          r,
+/usr/share/unity/icons/**                      r,
+/usr/share/thumbnailer/icons/**                r,
+/usr/share/themes/**                           r,
+/snap/communitheme/*/share/themes/**           r,
 
 # The snapcraft desktop part may look for schema files in various locations, so
 # allow reading system installed schemas.
